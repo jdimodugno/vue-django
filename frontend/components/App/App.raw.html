@@ -1,0 +1,22 @@
+<div id="app">
+    <header class="header">
+        <div class="header-wrapper --container">
+            <router-link
+                class="header-action"
+                :to="{name: 'home'}">Home
+            </router-link>
+            <router-link
+                class="header-action"
+                :to="{name: 'beers'}">Beers
+            </router-link>
+            <button
+                v-if="!user"
+                class="header-action header-loginButton"
+                @click="authenticate()">Login
+            </button>
+        </div>
+    </header>
+    <section class="main --container">
+        <router-view></router-view>
+    </section>
+</div>

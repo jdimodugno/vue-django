@@ -1,0 +1,9 @@
+Django==1.11.7
+django-extensions==1.9.7
+django-webpack-loader
+psycopg2
+djangorestframework
+markdown
+django-filter
+pillow
+graphene-django>=2.0

@@ -1,0 +1,11 @@
+@import '../../styles/_index.scss';
+
+.Beers {
+
+}
+
+.Beers-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

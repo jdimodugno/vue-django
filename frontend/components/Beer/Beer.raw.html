@@ -1,0 +1,14 @@
+<div
+    class="Beer">
+    <p class="Beer-name">{{ beer.name }}
+        (<strong class="Beer-abv">{{ beer.abv }}</strong>% ABV)
+    </p>
+    <!-- <p class="Beer-description">{{ beer.description }}</p> -->
+    <div class="Beer-imgWrapper">
+        <div
+            class="Beer-img"
+            v-bind:style="{ backgroundImage: 'url(' + beer.image + ')'}"
+        ></div>
+    </div>
+    <BeerRating :beerId="beer.id" :score="beer.score" :votes="beer.votes"/>
+</div>

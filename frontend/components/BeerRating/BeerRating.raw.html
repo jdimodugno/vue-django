@@ -1,0 +1,13 @@
+<div class="BeerRating">
+    <p>
+        <button
+            class="BeerRating-button"
+            v-for="n in 5"
+            @click="rate(n)"
+            >{{ n }}
+        </button>
+    </p>
+    <p v-if="score">Puntuación promedio: {{ score | number(2) }}</p>
+    <p v-if="votes">Votos: {{votes}}</p>
+    <p v-else>No fue calificada al momento</p>
+</div>
