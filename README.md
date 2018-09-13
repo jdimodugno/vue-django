@@ -31,6 +31,25 @@ The project has the following directory structure:
     `pip install -r requirements.txt`
     `pip install -r requirements-dev.txt`
 4) At this point, you'll need to provide the database setup, for that purpose, update the *settings.py* file. With the purpose of providing a working project, that file is already set with a functional setup.
+
+
+Create DB
+    sudo -u postgres createuser playground
+    sudo -u postgres createdb playground
+
+Enter Postgres
+    sudo -u postgres psql
+
+Give privileges
+    grant all privileges on database to playground
+
+Set user password
+    sudo -u postgres psql playground
+    \password playground
+    Password
+    playground
+
+
 5) Execute the migrations by running: `migrate` (*). It should reflect the django models in database.
 6) At this time you must be able to run `serve` and watch your app working. (**)
 
