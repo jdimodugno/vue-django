@@ -48,10 +48,10 @@ sudo -u postgres createdb playground
 
 ### Set user password
 
-#####sudo -u postgres psql playground
-#####\password playground
-#####Password
-#####playground
+##### sudo -u postgres psql playground
+##### \password playground
+##### Password
+##### playground
 
 
 5) Execute the migrations by running: `migrate` (*). It should reflect the django models in database.
