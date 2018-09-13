@@ -4,6 +4,6 @@ django-webpack-loader
 psycopg2
 djangorestframework
 markdown
-django-filter
+django-filter==1.1
 pillow
 graphene-django>=2.0
